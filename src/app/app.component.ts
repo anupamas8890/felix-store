@@ -9,9 +9,6 @@ import { FelixStoreService } from './felix-store.service';
 export class AppComponent {
   title = 'app';
 
-  myItems;
-  constructor(private felixstore : FelixStoreService) {
-     this.myItems=this.felixstore.items;
-  }
+
 }
 

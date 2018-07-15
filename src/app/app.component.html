@@ -1,23 +1,7 @@
 
 <app-header></app-header>
-<!--<div class="row">
-        <div class="col-sm-8" *ngFor="let myItem of myItems; let i=index;">.
-               <div class="">
-                    <img src="{{ myItem.item_image}}" />
-                    <p>{{ myItem.name }}</p>
-               </div> 
-        </div>
-        <div class="col-sm-4">.col-sm-8</div>
-      </div>-->
-<table>
-    <tr *ngFor="let myItem of myItems; let i=index;">
-       <!-- <td> {{ myItem.id }} </td>-->
-        
-       <td><a href="/felixStore/"><img src="{{ myItem.item_image}}" /></a> </td>
-        <td>{{ myItem.name }} <br/> {{ myItem.item_code }}</td>
-        <th>Qty</th><td><input type="text" name="" [(ngModel)]="id" /></td>
-        <!--<td>{{ myItem.description }}</td>-->
-    </tr>
-</table>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
 <app-footer></app-footer>
